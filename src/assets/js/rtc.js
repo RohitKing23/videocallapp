@@ -359,7 +359,7 @@ window.addEventListener( 'load', () => {
 
                 setTimeout( () => {
                     document.getElementById('chat-input').value = '';
-                }, 50 );
+                }, 100 );
             }
         });
 
@@ -372,7 +372,7 @@ window.addEventListener( 'load', () => {
 
                 setTimeout( () => {
                     e.target.value = '';
-                }, 50 );
+                }, 100 );
             }
         } );
 

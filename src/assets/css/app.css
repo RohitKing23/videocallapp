@@ -68,9 +68,14 @@
 
 
 .remote-video{
-    width:100%;
-    height:auto;
-    max-height: 90vh;
+    width: 100%;
+    height: 93%;
+    position: fixed;
+    /* max-height: 100%; */
+    /* display: block; */
+    object-fit: cover;
+    padding: 0;
+    z-index: -999;
 }
 
 
@@ -156,7 +161,7 @@
 .record-option{
     height: 200px;
     border-radius: 10%;
-    border: 1px solid #17a2b8;
+    border: 1px solid #CA2868;
     cursor: pointer;
     padding: 10px;
     vertical-align: middle;
@@ -179,7 +184,7 @@
     background-color: #fefefe;
     margin: 15% auto;
     padding: 20px;
-    border: 1px solid #17a2b8;
+    border: 1px solid #CA2868;
     width: 80%;
 }
 

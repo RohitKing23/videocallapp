@@ -39,12 +39,12 @@
             </div>
         </div>
         
-        <nav class="navbar fixed-top bg-info rounded-0 d-print-none">
+        <nav class="navbar fixed-top rounded-0 d-print-none" style="background-color: #CA2868;" >
             <div class="text-white">Video Call</div>
 
             <div class="pull-right room-comm" hidden>
                 <span class="text-white mr-5">
-                    Unique Identifier: <span id='randomNumber'></span>
+                    <!-- Unique Identifier: <span id='randomNumber'></span> -->
                 </span>
 
                 <button class="btn btn-sm rounded-0 btn-no-effect" id='toggle-video' title="Hide Video">
@@ -55,15 +55,15 @@
                     <i class="fa fa-microphone-alt text-white"></i>
                 </button>
 
-                <button class="btn btn-sm rounded-0 btn-no-effect" id='share-screen' title="Share screen">
+                <!-- <button class="btn btn-sm rounded-0 btn-no-effect" id='share-screen' title="Share screen">
                     <i class="fa fa-desktop text-white"></i>
-                </button>
+                </button> -->
 
-                <button class="btn btn-sm rounded-0 btn-no-effect" id='record' title="Record">
+                <!-- <button class="btn btn-sm rounded-0 btn-no-effect" id='record' title="Record">
                     <i class="fa fa-dot-circle text-white"></i>
-                </button>
+                </button> -->
 
-                <button class="btn btn-sm text-white pull-right btn-no-effect" id='toggle-chat-pane'>
+                <button class="btn btn-sm text-white pull-right btn-no-effect" id='toggle-chat-pane'  >
                     <i class="fa fa-comment"></i> <span class="badge badge-danger very-small font-weight-lighter" id='new-chat-notification' hidden>New</span>
                 </button>
 
@@ -132,18 +132,18 @@
                     <div class="row mt-2 mb-2" id='videos'></div>
                 </div>
 
-                <div class="col-md-3 chat-col d-print-none mb-2 bg-info" id='chat-pane' hidden>
+                <div   class="col-md-3 chat-col d-print-none mb-2 " style="background-color: #CA2868;"  id='chat-pane' hidden>
                     <div class="row">
                         <div class="col-12 text-center h2 mb-3">CHAT</div>
                     </div>
 
                     <div id='chat-messages'></div>
 
-                    <form>
+                    <form  >
                         <div class="input-group mb-3" >
-                            <textarea  id="chat-input" class="form-control rounded-0 chat-box border-info" rows='3' placeholder="Type here..."></textarea>
+                            <textarea style="position: fixed; height: 40px;  bottom: 0px; "  id="chat-input" class="form-control rounded-0 chat-box border-info" rows='3' placeholder="Type here..." style="width: 10px;  " ></textarea>
                             <div class="input-group-append" id='chat-input-btn'>
-                                <button type="button" class="btn btn-dark rounded-0 border-info btn-no-effect">Send</button>
+                                <button type="button" class="btn btn-dark rounded-0 border-info btn-no-effect" hidden >Send</button>
                             </div>
                         </div>
                     </form>
